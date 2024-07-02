@@ -1,21 +1,17 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Layout from './Layout.js'
+import LandingPage from './pages/LandingPage.js';
+import LoginPage from './pages/LoginPage.js';
 
 function App() {
   return (
-    <main>
-      <header>
-        <h1 className="logo">TellIt</h1>
-        <nav>
-          <a href="#">Discover</a>
-          <a href="#">About Us</a>
-          <a href="#">Login</a>
-          <a href="#">Sign Up</a>
-        </nav>
-      </header>
-
-      <div className="image">
-      </div>
-    </main>
+    <Routes>
+      <Route path='/' element={<Layout />}>
+        <Route index element={<LandingPage />} />
+        <Route path='/login' element={<LoginPage />} />
+      </Route>
+    </Routes>
   );
 }
 
