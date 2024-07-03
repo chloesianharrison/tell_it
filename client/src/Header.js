@@ -29,9 +29,10 @@ export default function Header(){
       <h1 className="logo">TellIt</h1>
       <nav>
           <Link to="/discover">Discover</Link>
-          <Link to="/about">About Us</Link>
+
         {!name && (
           <>
+            <Link to="/about">About Us</Link>
             <Link to='/login'>Login</Link>
             <Link to="/signup">Sign Up</Link>
           </>

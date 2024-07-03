@@ -38,7 +38,7 @@ export default function SignUp(){
                 onChange={ev =>
                 setPassword(ev.target.value)}/>
         {/* <input type="text" placeholder="Confirm Password"/> */}
-        <button>Sign Up</button>
+        <button className="submit-button">Sign Up</button>
       </form>
     </div>
   )

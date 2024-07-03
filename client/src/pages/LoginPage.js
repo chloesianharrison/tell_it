@@ -47,7 +47,7 @@ export default function LoginPage(){
         placeholder="Password"
         value={password}
         onChange={ev => setPassword(ev.target.value)}/>
-        <button>Login</button>
+        <button className="submit-button">Login</button>
       </form>
     </div>
   );

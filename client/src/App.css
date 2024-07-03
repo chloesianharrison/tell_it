@@ -84,7 +84,7 @@ div.login, div.signup{
   margin-top: 0.5rem;
 }
 
-form button {
+form.submit-button {
   font-size: 20px;
   font-weight: 600;
   background-color: #fff;
@@ -97,9 +97,29 @@ form button {
   border-style: none;
 }
 
-form button:hover{
+form submit-button:hover{
   background-color: #5E1675;
   color: #fff;
   border-color: #3c0f4b;
   box-shadow: 5px 5px 5px #181402;
+}
+
+div.dashboard-menu{
+  display: flex;
+  flex-direction: column;
+  background-color: #F4CE14;
+  width: 20%;
+  height: 87dvh;
+  margin-left: -7.3rem;
+}
+
+div.dashboard-menu a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.6rem;
+  margin-left: 1rem;
 }
